@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "Abilities.h"
 
 UAbilities* UAbilities::AddAbilities(UAbilities* A, UAbilities* B)
@@ -14,5 +13,15 @@ UAbilities* UAbilities::AddAbilities(UAbilities* A, UAbilities* B)
 	result->charisma = A->charisma + B->charisma;
 	return result;
 }
+void UAbilities::Initialize(int strengthValue, int constitutionValue, int dexterityValue, int intelligenceValue, int wisdomValue, int charismaValue)
+{
+	strength = strengthValue;
+	constitution = constitutionValue;
+	dexteity = dexterityValue;
+	intelligence = intelligenceValue;
+	wisdom = wisdomValue;
+	charisma = charismaValue;
+}
+
 
 
