@@ -31,3 +31,19 @@ UAbilities* UStaticProvidersLibrary::GetBaseRaceAbilities(ERaceNames race)
 	}
 	return result;
 }
+int UStaticProvidersLibrary::GetBaseAttackBonus(EProfessionNames profession, int level)
+{
+	double	progressionBonus(0);
+	switch (profession)
+	{
+	case Warrior: case Paladin: case Ranger:
+		progressionBonus = 1;
+		break;
+	case Rogue: case Monk:
+		progressionBonus = 0.75;
+		break;
+	case Wizard:
+		progressionBonus = 0.5;
+	}
+	return level*progressionBonus;
+}
