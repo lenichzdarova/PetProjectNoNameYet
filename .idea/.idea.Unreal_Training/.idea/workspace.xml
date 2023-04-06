@@ -6,10 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a34ff8-1a90-49dd-8d4e-fa47aff0d1e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/RaceEnum.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unreal_Training/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unreal_Training/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_AbilitiesHandler.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_AbilitiesHandler.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_Character.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_HealthHandler.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_HealthHandler.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/Enums/RaceEnum.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/Interfaces/IAbilitiesProvider.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/Interfaces/IAbilitiesProvider.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/UI_HealthBar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/UI_HealthBar.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/NewMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/NewMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Private/Abilities.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Private/Abilities.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/Abilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/Abilities.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unreal_Training.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/Unreal_Training.uproject" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +186,9 @@
       <workItem from="1680627669636" duration="7475000" />
       <workItem from="1680638788612" duration="6163000" />
       <workItem from="1680682309880" duration="2236000" />
-      <workItem from="1680714369064" duration="957000" />
+      <workItem from="1680714369064" duration="2150000" />
+      <workItem from="1680770539546" duration="2883000" />
+      <workItem from="1680783596479" duration="2413000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1680627558967</created>

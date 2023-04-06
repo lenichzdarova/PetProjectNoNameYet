@@ -17,24 +17,24 @@ class UNREAL_TRAINING_API UAbilities : public UObject
 
 public:
 	UPROPERTY(BlueprintReadWrite)
-	int strength;
+	int strength{10};
 	UPROPERTY(BlueprintReadWrite)
-	int constitution;
+	int constitution{10};
 	UPROPERTY(BlueprintReadWrite)
-	int dexteity;
+	int dexterity{10};
 	UPROPERTY(BlueprintReadWrite)
-	int intelligence;
+	int intelligence{10};
 	UPROPERTY(BlueprintReadWrite)
-	int wisdom;
+	int wisdom{10};
 	UPROPERTY(BlueprintReadWrite)
-	int charisma;
+	int charisma{10};
 
 	UFUNCTION(BlueprintPure, meta=(DisplayName = "Abilities + Abilities", CompactNodeTitle = "Add",
 		Keywords = "+ add plus abilities"), Category="MyClasses")
 	static UAbilities* AddAbilities(UAbilities* A, UAbilities* B);
 
 	UFUNCTION(BlueprintCallable)
-	void Initialize(int strengthValue, int constitutionValue, int dexterityValue, int intelligenceValue,
+	void SetAbilities(int strengthValue, int constitutionValue, int dexterityValue, int intelligenceValue,
 		int wisdomValue, int charismaValue);
 };
 
