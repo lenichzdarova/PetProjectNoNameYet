@@ -17,21 +17,25 @@ class UNREAL_TRAINING_API UAbilities : public UObject
 
 public:
 	UPROPERTY(BlueprintReadWrite)
-	int strength{10};
+	int strength{0};
 	UPROPERTY(BlueprintReadWrite)
-	int constitution{10};
+	int constitution{0};
 	UPROPERTY(BlueprintReadWrite)
-	int dexterity{10};
+	int dexterity{0};
 	UPROPERTY(BlueprintReadWrite)
-	int intelligence{10};
+	int intelligence{0};
 	UPROPERTY(BlueprintReadWrite)
-	int wisdom{10};
+	int wisdom{0};
 	UPROPERTY(BlueprintReadWrite)
-	int charisma{10};
+	int charisma{0};
 
-	UFUNCTION(BlueprintPure, meta=(DisplayName = "Abilities + Abilities", CompactNodeTitle = "Add",
-		Keywords = "+ add plus abilities"), Category="MyClasses")
+	UFUNCTION(BlueprintPure, meta=(DisplayName = "Abilities + Abilities", CompactNodeTitle = "+",
+		CommutativeAssociativeBinaryOperator = true, Keywords = "+ add plus abilities"), Category="MyClasses")
 	static UAbilities* AddAbilities(UAbilities* A, UAbilities* B);
+
+	UFUNCTION(BlueprintPure, meta=(DisplayName = "Abilities - Abilities", CompactNodeTitle = "-",
+		CommutativeAssociativeBinaryOperator = true, Keywords = "- subtract minus abilities"), Category="MyClasses")
+	static UAbilities* SubtractAbilities(UAbilities* A, UAbilities* B);
 
 	UFUNCTION(BlueprintCallable)
 	void SetAbilities(int strengthValue, int constitutionValue, int dexterityValue, int intelligenceValue,

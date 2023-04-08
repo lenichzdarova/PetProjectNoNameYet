@@ -7,12 +7,24 @@
   <component name="ChangeListManager">
     <list default="true" id="68a34ff8-1a90-49dd-8d4e-fa47aff0d1e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unreal_Training/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unreal_Training/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_AttackHandler.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_AttackHandler.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_BaseAttackBonusProvider.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_BaseAttackBonusProvider.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_AbilitiesHandler.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_AbilitiesHandler.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_Character.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/Enums/ProfessionEnum.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Private/StaticProvidersLibrary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Private/StaticProvidersLibrary.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/StaticProvidersLibrary.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/StaticProvidersLibrary.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_EffectsHandler.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_EffectsHandler.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_FeatsHandler.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_FeatsHandler.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_Health.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_Health.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_HealthHandler.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_HealthHandler.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_LevelProgressionHandler.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_PlayerParty.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_PlayerParty.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/ForTest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/ForTest.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/Interfaces/IAbilitiesBonusProvider.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/Interfaces/IAbilitiesBonusProvider.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Private/Abilities.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Private/Abilities.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Private/Dices.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Private/Dices.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Private/StaticProvidersLibrary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Private/BaseDataProvidersLibrary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/Abilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/Abilities.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/Dices.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/Dices.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/StaticProvidersLibrary.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/BaseDataProvidersLibrary.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +198,10 @@
       <workItem from="1680770539546" duration="2883000" />
       <workItem from="1680783596479" duration="2558000" />
       <workItem from="1680794583475" duration="4914000" />
+      <workItem from="1680849358156" duration="913000" />
+      <workItem from="1680854304162" duration="2808000" />
+      <workItem from="1680894761964" duration="2304000" />
+      <workItem from="1680982595264" duration="2234000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1680627558967</created>

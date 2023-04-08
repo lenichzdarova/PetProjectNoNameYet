@@ -1,9 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "StaticProvidersLibrary.h"
+#include "BaseDataProvidersLibrary.h"
 
-UAbilities* UStaticProvidersLibrary::GetBaseRaceAbilities(ERaceNames race)
+UAbilities* UBaseDataProvidersLibrary::GetBaseRaceAbilities(ERaceNames race)
 {
 	UAbilities* result = NewObject<UAbilities>();
 	switch (race)
@@ -31,7 +31,7 @@ UAbilities* UStaticProvidersLibrary::GetBaseRaceAbilities(ERaceNames race)
 	}
 	return result;
 }
-int UStaticProvidersLibrary::GetBaseAttackBonus(EProfessionNames profession, int level)
+int UBaseDataProvidersLibrary::GetBaseAttackBonus(EProfessionNames profession, int level)
 {
 	double	progressionBonus(0);
 	switch (profession)
@@ -47,3 +47,26 @@ int UStaticProvidersLibrary::GetBaseAttackBonus(EProfessionNames profession, int
 	}
 	return level*progressionBonus;
 }
+UDices* UBaseDataProvidersLibrary::GetBaseHealthBonus(EProfessionNames profession)
+{
+	UDices* result = NewObject<UDices>();
+	switch (profession)
+	{
+	case Warrior:
+		result->Set(1,12);		
+	case Paladin:
+		result->Set(1,10);
+		break;
+	case Ranger: case Monk:
+		result->Set(1,8);
+		break;
+	case Rogue:
+		result->Set(1,6);
+		break;
+	case Wizard:
+		result->Set(1,4);
+		break;		
+	}
+	return result;
+}
+
