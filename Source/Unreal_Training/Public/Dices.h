@@ -18,14 +18,14 @@ private:
 	int rolls, faces;
 
 public:
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintCallable)
 	int Roll()const;
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintCallable)
 	int GetMaxRoll()const;
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintCallable)
 	int GetMinRoll()const;
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintCallable)
 	UDices* Set(int rollCount, int facesValue);
-	UFUNCTION(BlueprintPure)
-	FString Print();
+	UFUNCTION(BlueprintCallable)
+	FString Print() const;
 };

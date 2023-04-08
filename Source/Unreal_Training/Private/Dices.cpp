@@ -22,7 +22,7 @@ UDices* UDices::Set(int rollCount, int facesValue)
 	faces = facesValue;
 	return this;
 }
-FString UDices::Print()
+FString UDices::Print()const
 {	 
 	return FString(rolls +"D" +faces);
 }

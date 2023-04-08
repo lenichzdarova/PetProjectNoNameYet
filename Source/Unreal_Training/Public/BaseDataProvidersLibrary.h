@@ -3,18 +3,18 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Dices.h"
 #include "Abilities.h"
 #include "RaceEnum.h"
 #include "ProfessionNames.h"
-#include "UObject/NoExportTypes.h"
-#include "StaticProvidersLibrary.generated.h"
+#include "BaseDataProvidersLibrary.generated.h"
 
 
 /**
  * 
  */
 UCLASS(BlueprintType)
-class UNREAL_TRAINING_API UStaticProvidersLibrary : public UObject
+class UNREAL_TRAINING_API UBaseDataProvidersLibrary : public UObject
 {
 	GENERATED_BODY()
 
@@ -22,4 +22,6 @@ class UNREAL_TRAINING_API UStaticProvidersLibrary : public UObject
 	static UAbilities* GetBaseRaceAbilities(ERaceNames race);
 	UFUNCTION(BlueprintCallable,BlueprintPure)
 	static int GetBaseAttackBonus(EProfessionNames profession, int level);
+	UFUNCTION(BlueprintCallable,BlueprintPure)
+	static UDices* GetBaseHealthBonus(EProfessionNames profession);
 };
