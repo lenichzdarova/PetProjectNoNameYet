@@ -26,7 +26,7 @@ UAbilities* UAbilities::SubtractAbilities(UAbilities* A, UAbilities* B)
 	return result;
 }
 	
-void UAbilities::SetAbilities(int strengthValue, int constitutionValue, int dexterityValue, int intelligenceValue, int wisdomValue, int charismaValue)
+UAbilities* UAbilities::Set(int strengthValue, int constitutionValue, int dexterityValue, int intelligenceValue, int wisdomValue, int charismaValue)
 {
 	strength = strengthValue;
 	constitution = constitutionValue;
@@ -34,6 +34,7 @@ void UAbilities::SetAbilities(int strengthValue, int constitutionValue, int dext
 	intelligence = intelligenceValue;
 	wisdom = wisdomValue;
 	charisma = charismaValue;
+	return this;
 }
 
 bool UAbilities::EqualityCheck(UAbilities* A, UAbilities* B)

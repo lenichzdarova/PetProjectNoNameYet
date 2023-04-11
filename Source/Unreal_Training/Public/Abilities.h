@@ -38,7 +38,7 @@ public:
 	static UAbilities* SubtractAbilities(UAbilities* A, UAbilities* B);
 
 	UFUNCTION(BlueprintCallable)
-	void SetAbilities(int strengthValue, int constitutionValue, int dexterityValue, int intelligenceValue,
+	UAbilities* Set(int strengthValue, int constitutionValue, int dexterityValue, int intelligenceValue,
 		int wisdomValue, int charismaValue);
 	
 	UFUNCTION(BlueprintPure, meta=(DisplayName = "Abilities == Abilities", CompactNodeTitle = "==",

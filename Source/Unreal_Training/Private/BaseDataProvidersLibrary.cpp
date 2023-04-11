@@ -9,25 +9,25 @@ UAbilities* UBaseDataProvidersLibrary::GetBaseRaceAbilities(ERaceNames race)
 	switch (race)
 	{
 	case Dwarf:
-		result->SetAbilities(10,10,10,10,10,10);
+		result->Set(10,10,10,10,10,10);
 		break;
 	case Elf:
-		result->SetAbilities(10,10,10,10,10,10);
+		result->Set(10,10,10,10,10,10);
 		break;
 	case Gnome:
-		result->SetAbilities(10,10,10,10,10,10);
+		result->Set(10,10,10,10,10,10);
 		break;		
 	case Halfling:
-		result->SetAbilities(10,10,10,10,10,10);
+		result->Set(10,10,10,10,10,10);
 		break;
 	case Human:
-		result->SetAbilities(10,10,10,10,10,10);
+		result->Set(10,10,10,10,10,10);
 		break;
 	case Orc:
-		result->SetAbilities(10,10,10,10,10,10);
+		result->Set(10,10,10,10,10,10);
 		break;
 		default:
-			result->SetAbilities(10,10,10,10,10,10);
+			result->Set(10,10,10,10,10,10);
 	}
 	return result;
 }
@@ -53,7 +53,8 @@ UDices* UBaseDataProvidersLibrary::GetBaseHealthBonus(EProfessionNames professio
 	switch (profession)
 	{
 	case Warrior:
-		result->Set(1,12);		
+		result->Set(1,12);
+		break;
 	case Paladin:
 		result->Set(1,10);
 		break;
@@ -69,4 +70,6 @@ UDices* UBaseDataProvidersLibrary::GetBaseHealthBonus(EProfessionNames professio
 	}
 	return result;
 }
+
+
 
