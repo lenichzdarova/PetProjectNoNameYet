@@ -9,5 +9,13 @@ enum EProfessionNames
 	Wizard,
 	Paladin,
 	Ranger,
-	Monk			
+	Monk,
+	Warlock,
+	Bard,
+	Cleric,
+	Druid,
+	Dancer,
+	Vampire,
+	Necromancer,
+	Alchemist
 };

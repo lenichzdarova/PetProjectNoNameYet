@@ -16,17 +16,17 @@ class UNREAL_TRAINING_API UAbilities : public UObject
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite, BlueprintSetter=SetStrength)
 	int strength{0};
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite,BlueprintSetter=SetConstitution)
 	int constitution{0};
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite,BlueprintSetter=SetDexterity)
 	int dexterity{0};
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite,BlueprintSetter=SetIntelligence)
 	int intelligence{0};
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite,BlueprintSetter=SetWisdom)
 	int wisdom{0};
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite,BlueprintSetter=SetCharisma)
 	int charisma{0};
 
 	UFUNCTION(BlueprintPure, meta=(DisplayName = "Abilities + Abilities", CompactNodeTitle = "+",
@@ -38,8 +38,58 @@ public:
 	static UAbilities* SubtractAbilities(UAbilities* A, UAbilities* B);
 
 	UFUNCTION(BlueprintCallable)
-	void SetAbilities(int strengthValue, int constitutionValue, int dexterityValue, int intelligenceValue,
+	UAbilities* Set(int strengthValue, int constitutionValue, int dexterityValue, int intelligenceValue,
 		int wisdomValue, int charismaValue);
+	
+	UFUNCTION(BlueprintPure, meta=(DisplayName = "Abilities == Abilities", CompactNodeTitle = "==",
+    		CommutativeAssociativeBinaryOperator = true, Keywords = "== equeal abilities"), Category="MyClasses")
+    static bool EqualityCheck(UAbilities* A, UAbilities* B);
+
+	/** Please add a variable description */
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FAbilityChange);
+	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
+	FAbilityChange StrengthChanged;
+
+	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
+	FAbilityChange ConstitutionChanged;
+
+	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
+	FAbilityChange DexterityChanged;
+
+	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
+	FAbilityChange IntelligenceChanged;
+
+	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
+	FAbilityChange WisdomChanged;
+
+	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
+	FAbilityChange CharismaChanged;
+
+	UFUNCTION(BlueprintCallable, BlueprintSetter)
+	void SetStrength(int value);
+	UFUNCTION(BlueprintCallable, BlueprintSetter)
+	void SetConstitution(int value);
+	UFUNCTION(BlueprintCallable, BlueprintSetter)
+	void SetDexterity(int value);
+	UFUNCTION(BlueprintCallable, BlueprintSetter)
+	void SetIntelligence(int value);
+	UFUNCTION(BlueprintCallable, BlueprintSetter)
+	void SetWisdom(int value);
+	UFUNCTION(BlueprintCallable, BlueprintSetter)
+	void SetCharisma(int value);
+
+	UFUNCTION(BlueprintCallable)
+	void AddStrength(int value);
+	UFUNCTION(BlueprintCallable)
+	void AddConstitution(int value);
+	UFUNCTION(BlueprintCallable)
+	void AddDexterity(int value);
+	UFUNCTION(BlueprintCallable)
+	void AddIntelligence(int value);
+	UFUNCTION(BlueprintCallable)
+	void AddWisdom(int value);
+	UFUNCTION(BlueprintCallable)
+	void AddCharisma(int value);	
 };
 
 
