@@ -48,22 +48,22 @@ public:
 	/** Please add a variable description */
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FAbilityChange);
 	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
-	FAbilityChange StrengthChange;
+	FAbilityChange StrengthChanged;
 
 	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
-	FAbilityChange ConstitutionChange;
+	FAbilityChange ConstitutionChanged;
 
 	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
-	FAbilityChange DexterityChange;
+	FAbilityChange DexterityChanged;
 
 	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
-	FAbilityChange IntelligenceChange;
+	FAbilityChange IntelligenceChanged;
 
 	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
-	FAbilityChange WisdomChange;
+	FAbilityChange WisdomChanged;
 
 	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
-	FAbilityChange CharismaChange;
+	FAbilityChange CharismaChanged;
 
 	UFUNCTION(BlueprintCallable, BlueprintSetter)
 	void SetStrength(int value);

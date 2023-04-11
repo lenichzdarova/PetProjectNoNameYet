@@ -54,63 +54,63 @@ bool UAbilities::EqualityCheck(UAbilities* A, UAbilities* B)
 void UAbilities::SetStrength(int value)
 {
 	strength = value;
-	StrengthChange.Broadcast();
+	StrengthChanged.Broadcast();
 }
 void UAbilities::SetConstitution(int value)
 {
 	constitution = value;
-	ConstitutionChange.Broadcast();
+	ConstitutionChanged.Broadcast();
 }
 void UAbilities::SetDexterity(int value)
 {
 	dexterity = value;
-	DexterityChange.Broadcast();
+	DexterityChanged.Broadcast();
 }
 void UAbilities::SetIntelligence(int value)
 {
 	intelligence = value;
-	IntelligenceChange.Broadcast();
+	IntelligenceChanged.Broadcast();
 }
 void UAbilities::SetWisdom(int value)
 {
 	wisdom = value;
-	WisdomChange.Broadcast();
+	WisdomChanged.Broadcast();
 }
 void UAbilities::SetCharisma(int value)
 {
 	charisma = value;
-	CharismaChange.Broadcast();
+	CharismaChanged.Broadcast();
 }
 
 void UAbilities::AddStrength(int value)
 {
 	strength += value;
-	StrengthChange.Broadcast();
+	StrengthChanged.Broadcast();
 }
 void UAbilities::AddConstitution(int value)
 {
 	constitution += value;
-	ConstitutionChange.Broadcast();
+	ConstitutionChanged.Broadcast();
 }
 void UAbilities::AddDexterity(int value)
 {
 	dexterity += value;
-	DexterityChange.Broadcast();
+	DexterityChanged.Broadcast();
 }
 void UAbilities::AddIntelligence(int value)
 {
 	intelligence += value;
-	IntelligenceChange.Broadcast();
+	IntelligenceChanged.Broadcast();
 }
 void UAbilities::AddWisdom(int value)
 {
 	wisdom += value;
-	WisdomChange.Broadcast();
+	WisdomChanged.Broadcast();
 }
 void UAbilities::AddCharisma(int value)
 {
 	charisma += value;
-	CharismaChange.Broadcast();
+	CharismaChanged.Broadcast();
 }
 
 

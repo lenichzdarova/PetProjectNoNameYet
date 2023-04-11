@@ -9,9 +9,12 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(BlueprintType)
 class UNREAL_TRAINING_API UEffectsHandler : public UObject
 {
 	GENERATED_BODY()
+
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FChanges);
+	FChanges EffectsChanged;
 	
 };

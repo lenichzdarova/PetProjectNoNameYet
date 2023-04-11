@@ -35,11 +35,11 @@ public:
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FChanges);
 
 	UPROPERTY()
-	FChanges currentExperienceChange;
+	FChanges CurrentExperienceChanged;
 
 	UPROPERTY()
-	FChanges ExperienceToNextLevelChange;
+	FChanges ExperienceToNextLevelChanged;
 
 	UPROPERTY()
-	FChanges CharacterLevelChange;
+	FChanges CharacterLevelChanged;
 };

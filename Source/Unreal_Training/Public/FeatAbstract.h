@@ -6,16 +6,15 @@
 #include "UObject/NoExportTypes.h"
 #include "FeatAbstract.generated.h"
 
-/**
- * 
- */
 UCLASS(Abstract)
 class UNREAL_TRAINING_API UFeatAbstract : public UObject
 {
 	GENERATED_BODY()
 public:
+	
 	UPROPERTY()
 	int id;
+	
 	UPROPERTY()
 	FString name; // maybe enum;
 	

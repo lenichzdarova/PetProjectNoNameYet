@@ -9,7 +9,6 @@
 #include "FeatsHandler.h"
 #include "EffectsHandler.h"
 #include "RaceEnum.h"
-#include "ProfessionEnum.h"
 #include "UObject/NoExportTypes.h"
 #include "CharacterData.generated.h"
 
@@ -18,14 +17,14 @@ class UNREAL_TRAINING_API UCharacterData : public UObject
 {
 	GENERATED_BODY()
 
+	//FIELDS
 public:
 	UPROPERTY()
 	UTexture2D* portrait;
 	
 	UPROPERTY()
-	TEnumAsByte<ERaceNames> race;
+	TEnumAsByte<ERaceNames> race;	
 	
-	//FIELDS
 private:
 	UPROPERTY()
 	UHealthHandler* healthHandler;
@@ -36,10 +35,28 @@ private:
 	UPROPERTY()
 	UEffectsHandler* effectsHandler;
 	UPROPERTY()
-	UExperienceHandler* experienceHandler;
+	UExperienceHandler* experienceHandler;	
 
 	//FUNCTIONS
 public:
 	UFUNCTION(BlueprintCallable)
-	void Set(TEnumAsByte<ERaceNames> raceValue, UFeatsHandler* featsHandlerValue, UEffectsHandler* effectsHandlerValue, UAbilities* abilitiesValue, UExperienceHandler* experienceHandlerValue);
+	void Set(TEnumAsByte<ERaceNames> raceValue, UTexture2D* portraitImage, UFeatsHandler* featsHandlerValue, UEffectsHandler* effectsHandlerValue,
+		UAbilities* abilitiesValue, UExperienceHandler* experienceHandlerValue, UHealthHandler* healthHandlerValue);
+	UFUNCTION(BlueprintCallable)
+	UAbilities* GetAbilities();
+private:
+	
+	void SubscribeMembersEvents();
+	UFUNCTION()
+	void OnStrengthChanged();
+	UFUNCTION()
+	void OnConstitutionChanged();
+	UFUNCTION()
+	void OnDexterityChanged();
+	UFUNCTION()
+	void OnIntelligenceChanged();
+	UFUNCTION()
+	void OnWisdomChanged();
+	UFUNCTION()
+	void OnCharismaChanged();	
 };
