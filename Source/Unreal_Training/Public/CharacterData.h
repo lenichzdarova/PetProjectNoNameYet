@@ -8,12 +8,13 @@
 #include "ExperienceHandler.h"
 #include "FeatsHandler.h"
 #include "EffectsHandler.h"
+#include "HealthProvider.h"
 #include "RaceEnum.h"
 #include "UObject/NoExportTypes.h"
 #include "CharacterData.generated.h"
 
 UCLASS(BlueprintType)
-class UNREAL_TRAINING_API UCharacterData : public UObject
+class UNREAL_TRAINING_API UCharacterData : public UObject, public IHealthProvider
 {
 	GENERATED_BODY()
 
@@ -44,6 +45,8 @@ public:
 		UAbilities* abilitiesValue, UExperienceHandler* experienceHandlerValue, UHealthHandler* healthHandlerValue);
 	UFUNCTION(BlueprintCallable)
 	UAbilities* GetAbilities();
+	UFUNCTION(BlueprintCallable)
+	UHealthHandler* GetHealth_Implementation();
 private:
 	
 	void SubscribeMembersEvents();

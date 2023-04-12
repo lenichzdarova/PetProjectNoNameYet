@@ -15,7 +15,9 @@ class UNREAL_TRAINING_API UExperienceHandler : public UObject
 {
 	GENERATED_BODY()
 
+	//FIELDS
 public:
+	const int experiencePerLevel = 1000;
 	
 	UPROPERTY()
 	TMap<int,TEnumAsByte<EProfessionNames>> professionProgress;
@@ -26,14 +28,32 @@ public:
 	UPROPERTY()
 	int experienceToNExtLevel{0};
 
+	UPROPERTY()
+	int levelUpPoints{0};
+
+	//FUNCTIONS
+private:
 	UFUNCTION()
+	void SetExperienceToNextLevel();
+	
+	UFUNCTION(BlueprintCallable)
 	int GetCharacterLevel();
 	
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void Set(TArray <TEnumAsByte<EProfessionNames>> characterProgress, int currentExperienceValue);
 
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FChanges);
+	UFUNCTION(BlueprintCallable)
+	void AddLevelUp(int value);
 
+	UFUNCTION(BlueprintCallable)
+	void RemoveLevelUp(int value);
+
+	UFUNCTION(BlueprintCallable)
+	void AddExperience(int value);	
+
+	//EVENTS
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FChanges);
+	
 	UPROPERTY()
 	FChanges CurrentExperienceChanged;
 
@@ -42,4 +62,7 @@ public:
 
 	UPROPERTY()
 	FChanges CharacterLevelChanged;
+
+	UPROPERTY()
+	FChanges LevelUpPointsChanged;
 };

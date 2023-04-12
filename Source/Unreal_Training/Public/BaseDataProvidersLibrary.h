@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Dices.h"
 #include "Abilities.h"
+#include "Feat.h"
 #include "RaceEnum.h"
 #include "ProfessionEnum.h"
 #include "BaseDataProvidersLibrary.generated.h"
@@ -20,8 +21,13 @@ class UNREAL_TRAINING_API UBaseDataProvidersLibrary : public UObject
 
 	UFUNCTION(BlueprintCallable, BlueprintPure)
 	static UAbilities* GetBaseRaceAbilities(ERaceNames race);
+	
 	UFUNCTION(BlueprintCallable,BlueprintPure)
 	static int GetBaseAttackBonus(EProfessionNames profession, int level);
+	
 	UFUNCTION(BlueprintCallable,BlueprintPure)
-	static UDices* GetBaseHealthBonus(EProfessionNames profession);    
+	static UDices* GetBaseHealthBonus(EProfessionNames profession);
+
+	UFUNCTION(BlueprintCallable,BlueprintPure)
+	static TSet<UFeat*> GetRaceBaseFeats(ERaceNames race); 
 };
