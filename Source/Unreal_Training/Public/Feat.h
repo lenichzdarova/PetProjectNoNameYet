@@ -4,10 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "FeatAbstract.generated.h"
+#include "Feat.generated.h"
 
 UCLASS(Abstract)
-class UNREAL_TRAINING_API UFeatAbstract : public UObject
+class UNREAL_TRAINING_API UFeat : public UObject
 {
 	GENERATED_BODY()
 public:
@@ -20,4 +20,10 @@ public:
 	
 	UFUNCTION()
 	virtual void Apply(){};
+
+	UFUNCTION()
+	virtual void Discard(){};
 };
+
+
+

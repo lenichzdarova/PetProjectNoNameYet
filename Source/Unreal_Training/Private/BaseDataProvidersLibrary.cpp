@@ -2,6 +2,7 @@
 
 
 #include "BaseDataProvidersLibrary.h"
+#include "DwarvenToughness.h"
 
 UAbilities* UBaseDataProvidersLibrary::GetBaseRaceAbilities(ERaceNames race)
 {
@@ -44,6 +45,8 @@ int UBaseDataProvidersLibrary::GetBaseAttackBonus(EProfessionNames profession, i
 		break;
 	case Wizard:
 		progressionBonus = 0.5;
+		break;
+		default:;
 	}
 	return level*progressionBonus;
 }
@@ -66,7 +69,30 @@ UDices* UBaseDataProvidersLibrary::GetBaseHealthBonus(EProfessionNames professio
 		break;
 	case Wizard:
 		result->Set(1,4);
-		break;		
+		break;
+		default:;
+	}
+	return result;
+}
+TSet<UFeat*> UBaseDataProvidersLibrary::GetRaceBaseFeats(ERaceNames race)
+{
+	TSet<UFeat*> result;
+	switch (race)
+	{
+	case Dwarf:
+		result.Add(NewObject<UDwarvenToughness>());
+		break;
+	case Elf:
+		break;
+	case Gnome:
+		break;
+	case Halfling:
+		break;
+	case Human:
+		break;
+	case Orc:
+		break;
+		default:;			
 	}
 	return result;
 }

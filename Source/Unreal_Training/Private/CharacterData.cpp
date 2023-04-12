@@ -13,13 +13,7 @@ void UCharacterData::Set(TEnumAsByte<ERaceNames> raceValue, UTexture2D* portrait
 	experienceHandler = experienceHandlerValue;
 	abilities = abilitiesValue;
 	healthHandler = healthHandlerValue;
-	SubscribeMembersEvents();
-	abilities->AddStrength(10);
-	abilities->AddConstitution(20);
-	abilities->AddDexterity(30);
-	abilities->AddIntelligence(40);
-	abilities->AddWisdom(50);
-	abilities->AddCharisma(60);
+	SubscribeMembersEvents();	
 }
 
 void UCharacterData::SubscribeMembersEvents()
@@ -53,43 +47,43 @@ void UCharacterData::SubscribeMembersEvents()
 
 void UCharacterData::OnStrengthChanged()
 {
-	auto dm = abilities->strength;	
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f,FColor::Magenta,FString::FromInt(dm));
+	
 }
 void UCharacterData::OnConstitutionChanged()
 {
-	auto dm = abilities->constitution;	
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f,FColor::Magenta,FString::FromInt(dm));
+	
 }
 
 void UCharacterData::OnDexterityChanged()
 {
-	auto dm = abilities->dexterity;	
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f,FColor::Magenta,FString::FromInt(dm));
+	
 }
 
 void UCharacterData::OnIntelligenceChanged()
 {
-	auto dm = abilities->intelligence;	
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f,FColor::Magenta,FString::FromInt(dm));
+	
 }
 
 void UCharacterData::OnWisdomChanged()
 {
-	auto dm = abilities->wisdom;	
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f,FColor::Magenta,FString::FromInt(dm));
+	
 }
 
 void UCharacterData::OnCharismaChanged()
 {
-	auto dm = abilities->charisma;	
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f,FColor::Magenta,FString::FromInt(dm));
+	
 }
 
 UAbilities* UCharacterData::GetAbilities()
 {
 	return abilities;
 }
+
+UHealthHandler* UCharacterData::GetHealth_Implementation()
+{
+	return healthHandler;
+}
+
 
 
 

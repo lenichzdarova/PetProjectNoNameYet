@@ -29,6 +29,14 @@ void UHealthHandler::SetConstitutionBonus(int value)
 	CalculateMaxHealth();
 	AddCurrentHealth(healthChange);		
 }
+void UHealthHandler::AddBonusPerLevel(int value)
+{
+	bonusPerLevel += value;
+	CalculateMaxHealth();
+	int healthDelta = value * currentLevel;
+	AddCurrentHealth(healthDelta);
+}
+
 void UHealthHandler::SetCurrentLevel(int value)
 {
 	int change = value - currentLevel;
@@ -39,7 +47,7 @@ void UHealthHandler::SetCurrentLevel(int value)
 }
 void UHealthHandler::CalculateMaxHealth()
 {
-	maxHealth = constitutionBonus * currentLevel + baseHealth;
+	maxHealth = (constitutionBonus + bonusPerLevel) * currentLevel + baseHealth;
 	MaxHealthChange.Broadcast();
 }
 void UHealthHandler::AddBaseHealth(int value)

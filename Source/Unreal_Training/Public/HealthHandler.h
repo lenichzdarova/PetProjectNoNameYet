@@ -14,7 +14,8 @@ class UHealthHandler : public UObject
 	//DATA MEMBERS
 private:	
 	int baseHealth{0};	
-	int constitutionBonus{0};	
+	int constitutionBonus{0};
+	int bonusPerLevel{0};
 	int currentLevel{0};
 
 public:
@@ -49,6 +50,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void AddBaseHealth(int baseHealthBonusValue);
+	UFUNCTION(BlueprintCallable)
+	void AddBonusPerLevel(int value);
 
 	// EVENTS
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FHealthChange);
