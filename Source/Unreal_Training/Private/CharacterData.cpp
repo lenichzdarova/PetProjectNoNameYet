@@ -84,6 +84,16 @@ UHealthHandler* UCharacterData::GetHealth_Implementation()
 	return healthHandler;
 }
 
+UFeatsHandler* UCharacterData::GetFeats()
+{
+	return featsHandler;
+}
+
+
+
+
+
+
 
 
 

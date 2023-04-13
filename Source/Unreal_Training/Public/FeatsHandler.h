@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Feat.h"
+#include "EFeatEnum.h"
 #include "UObject/NoExportTypes.h"
 #include "FeatsHandler.generated.h"
 
@@ -16,13 +16,19 @@ class UNREAL_TRAINING_API UFeatsHandler : public UObject
 	GENERATED_BODY()
 	//FIELD
 
-public:
-	
 	UPROPERTY()
-	TSet<UFeat*> characterFeats;
+	TSet<TEnumAsByte<EFeatNames>>  activeFeats;
 
+public:
 	//FUNCTIONS
+	UFUNCTION()
+	const TSet<TEnumAsByte<EFeatNames>>& GetFeats();
+	
+	UFUNCTION()
+	void AddFeat(EFeatNames feat);
 
+	UFUNCTION()
+	void RemoveFeat(EFeatNames feat);
 
 
 	
