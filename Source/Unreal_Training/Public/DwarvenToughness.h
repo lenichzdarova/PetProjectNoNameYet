@@ -13,12 +13,13 @@ UCLASS()
 class UNREAL_TRAINING_API UDwarvenToughness : public UFeat
 {
 	GENERATED_BODY()
-
+	
 	UPROPERTY()
 	int healthPerLevelBonus = 1; 
 	
+public:
 	
-	void Apply() override;
+	void ApplyFeat(UCharacterData* character) override;
 	
-	void Discard() override;
+	void DiscardFeat(UCharacterData* character) override;
 };

@@ -6,12 +6,15 @@
 #include "HealthHandler.h"
 #include "Abilities.h"
 #include "ExperienceHandler.h"
-#include "FeatsHandler.h"
+//#include "FeatsHandler.h"
+#include "EFeatEnum.h"
 #include "EffectsHandler.h"
 #include "HealthProvider.h"
-#include "RaceEnum.h"
+#include "ERaceEnum.h"
 #include "UObject/NoExportTypes.h"
 #include "CharacterData.generated.h"
+
+class UFeatsHandler;
 
 UCLASS(BlueprintType)
 class UNREAL_TRAINING_API UCharacterData : public UObject, public IHealthProvider
@@ -24,7 +27,10 @@ public:
 	UTexture2D* portrait;
 	
 	UPROPERTY()
-	TEnumAsByte<ERaceNames> race;	
+	TEnumAsByte<ERaceNames> race;
+
+	UPROPERTY()
+	TSet<TEnumAsByte<EFeatNames>>  activeFeats;
 	
 private:
 	UPROPERTY()
@@ -43,10 +49,12 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Set(TEnumAsByte<ERaceNames> raceValue, UTexture2D* portraitImage, UFeatsHandler* featsHandlerValue, UEffectsHandler* effectsHandlerValue,
 		UAbilities* abilitiesValue, UExperienceHandler* experienceHandlerValue, UHealthHandler* healthHandlerValue);
+	
 	UFUNCTION(BlueprintCallable)
 	UAbilities* GetAbilities();
+	
 	UFUNCTION(BlueprintCallable)
-	UHealthHandler* GetHealth_Implementation();
+	virtual UHealthHandler* GetHealth_Implementation() override;
 private:
 	
 	void SubscribeMembersEvents();

@@ -3,13 +3,15 @@
 
 #include "DwarvenToughness.h"
 
-void UDwarvenToughness::Apply()
-{
-	
+void UDwarvenToughness::ApplyFeat(UCharacterData* character)
+{	
+	UHealthHandler* health = character->Execute_GetHealth(character);	
+	health->AddBonusPerLevel(healthPerLevelBonus);	
 }
 
-void UDwarvenToughness::Discard()
-{
-	
+void UDwarvenToughness::DiscardFeat(UCharacterData* character)
+{	
+	UHealthHandler* health = character->Execute_GetHealth(character);	
+	health->AddBonusPerLevel(-healthPerLevelBonus);
 }
 
