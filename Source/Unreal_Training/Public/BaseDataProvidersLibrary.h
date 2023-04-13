@@ -6,8 +6,8 @@
 #include "Dices.h"
 #include "Abilities.h"
 #include "Feat.h"
-#include "RaceEnum.h"
-#include "ProfessionEnum.h"
+#include "ERaceEnum.h"
+#include "EProfessionEnum.h"
 #include "BaseDataProvidersLibrary.generated.h"
 
 

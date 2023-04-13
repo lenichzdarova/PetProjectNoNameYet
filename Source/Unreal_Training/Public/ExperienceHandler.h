@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "ProfessionEnum.h"
+#include "EProfessionEnum.h"
 #include "UObject/NoExportTypes.h"
 #include "ExperienceHandler.generated.h"
 
