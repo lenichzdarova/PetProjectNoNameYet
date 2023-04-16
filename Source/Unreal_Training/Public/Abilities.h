@@ -47,22 +47,22 @@ public:
 
 	/** Please add a variable description */
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FAbilityChange);
-	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
+	UPROPERTY(BlueprintAssignable)
 	FAbilityChange StrengthChanged;
 
-	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
+	UPROPERTY(BlueprintAssignable)
 	FAbilityChange ConstitutionChanged;
 
-	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
+	UPROPERTY(BlueprintAssignable)
 	FAbilityChange DexterityChanged;
 
-	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
+	UPROPERTY(BlueprintAssignable)
 	FAbilityChange IntelligenceChanged;
 
-	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
+	UPROPERTY(BlueprintAssignable)
 	FAbilityChange WisdomChanged;
 
-	UPROPERTY(BlueprintAssignable, EditDefaultsOnly, Category="Default")
+	UPROPERTY(BlueprintAssignable)
 	FAbilityChange CharismaChanged;
 
 	UFUNCTION(BlueprintCallable, BlueprintSetter)
@@ -89,7 +89,20 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void AddWisdom(int value);
 	UFUNCTION(BlueprintCallable)
-	void AddCharisma(int value);	
+	void AddCharisma(int value);
+
+	UFUNCTION(BlueprintCallable)
+	void RemoveStrength(int value);
+	UFUNCTION(BlueprintCallable)
+	void RemoveConstitution(int value);
+	UFUNCTION(BlueprintCallable)
+	void RemoveDexterity(int value);
+	UFUNCTION(BlueprintCallable)
+	void RemoveIntelligence(int value);
+	UFUNCTION(BlueprintCallable)
+	void RemoveWisdom(int value);
+	UFUNCTION(BlueprintCallable)
+	void RemoveCharisma(int value);
 };
 
 

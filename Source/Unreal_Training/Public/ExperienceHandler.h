@@ -33,7 +33,7 @@ public:
 
 	//FUNCTIONS
 private:
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void SetExperienceToNextLevel();
 	
 	UFUNCTION(BlueprintCallable)
@@ -54,15 +54,15 @@ private:
 	//EVENTS
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FChanges);
 	
-	UPROPERTY()
+	UPROPERTY(BlueprintAssignable)
 	FChanges CurrentExperienceChanged;
 
-	UPROPERTY()
+	UPROPERTY(BlueprintAssignable)
 	FChanges ExperienceToNextLevelChanged;
 
-	UPROPERTY()
+	UPROPERTY(BlueprintAssignable)
 	FChanges CharacterLevelChanged;
 
-	UPROPERTY()
+	UPROPERTY(BlueprintAssignable)
 	FChanges LevelUpPointsChanged;
 };

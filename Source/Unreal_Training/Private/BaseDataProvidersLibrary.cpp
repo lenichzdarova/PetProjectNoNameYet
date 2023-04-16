@@ -10,22 +10,22 @@ UAbilities* UBaseDataProvidersLibrary::GetBaseRaceAbilities(ERaceNames race)
 	switch (race)
 	{
 	case Dwarf:
-		result->Set(10,10,10,10,10,10);
+		result->Set(10,12,8,10,10,10);
 		break;
 	case Elf:
-		result->Set(10,10,10,10,10,10);
+		result->Set(10,8,12,10,10,10);
 		break;
 	case Gnome:
-		result->Set(10,10,10,10,10,10);
+		result->Set(8,10,10,12,10,10);
 		break;		
 	case Halfling:
-		result->Set(10,10,10,10,10,10);
+		result->Set(8,10,12,10,10,10);
 		break;
 	case Human:
 		result->Set(10,10,10,10,10,10);
 		break;
 	case Orc:
-		result->Set(10,10,10,10,10,10);
+		result->Set(12,10,10,8,10,10);
 		break;
 		default:
 			result->Set(10,10,10,10,10,10);
@@ -34,7 +34,7 @@ UAbilities* UBaseDataProvidersLibrary::GetBaseRaceAbilities(ERaceNames race)
 }
 int UBaseDataProvidersLibrary::GetBaseAttackBonus(EProfessionNames profession, int level)
 {
-	double	progressionBonus(0);
+	double	progressionBonus{0};
 	switch (profession)
 	{
 	case Warrior: case Paladin: case Ranger:

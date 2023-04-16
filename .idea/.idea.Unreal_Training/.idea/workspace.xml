@@ -9,17 +9,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a34ff8-1a90-49dd-8d4e-fa47aff0d1e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/EFeatEnum.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unreal_Training/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unreal_Training/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Private/DwarvenToughness.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Private/DwarvenToughness.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Private/FeatAbstract.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Private/Feat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/BaseDataProvidersLibrary.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/BaseDataProvidersLibrary.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_AbilitiesPanel.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_AbilitiesPanel.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_CharacterCreation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_CharacterCreation.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_ClassSelection.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_ClassSelection.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_ClassSelectionButton.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_RaceSelection.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_RaceSelection.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/CharacterCreationTestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/CharacterCreationTestLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Private/Abilities.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Private/Abilities.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Private/BaseDataProvidersLibrary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Private/BaseDataProvidersLibrary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/Abilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/Abilities.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/CharacterData.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/CharacterData.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/DwarvenToughness.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/DwarvenToughness.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/ExperienceHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/ExperienceHandler.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/Feat.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/Feat.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/ProfessionEnum.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/EProfessionEnum.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/RaceEnum.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/ERaceEnum.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/FeatsHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/FeatsHandler.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +228,9 @@
       <workItem from="1681313907499" duration="6586000" />
       <workItem from="1681335321170" duration="1243000" />
       <workItem from="1681381193207" duration="676000" />
-      <workItem from="1681394342888" duration="10579000" />
+      <workItem from="1681394342888" duration="14032000" />
+      <workItem from="1681458234037" duration="4368000" />
+      <workItem from="1681631175326" duration="1036000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1680627558967</created>

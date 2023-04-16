@@ -112,6 +112,36 @@ void UAbilities::AddCharisma(int value)
 	charisma += value;
 	CharismaChanged.Broadcast();
 }
+void UAbilities::RemoveStrength(int value)
+{
+	strength -= value;
+	StrengthChanged.Broadcast();
+}
+void UAbilities::RemoveConstitution(int value)
+{
+	constitution -= value;
+	ConstitutionChanged.Broadcast();
+}
+void UAbilities::RemoveDexterity(int value)
+{
+	dexterity -= value;
+	DexterityChanged.Broadcast();
+}
+void UAbilities::RemoveIntelligence(int value)
+{
+	intelligence -= value;
+	IntelligenceChanged.Broadcast();
+}
+void UAbilities::RemoveWisdom(int value)
+{
+	wisdom -= value;
+	WisdomChanged.Broadcast();
+}
+void UAbilities::RemoveCharisma(int value)
+{
+	charisma -= value;
+	CharismaChanged.Broadcast();
+}
 
 
 
