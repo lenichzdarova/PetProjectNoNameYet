@@ -54,7 +54,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	virtual UHealthHandler* GetHealth_Implementation() override;
 	
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	UFeatsHandler* GetFeats();
 	
 private:

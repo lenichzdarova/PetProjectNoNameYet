@@ -21,13 +21,13 @@ class UNREAL_TRAINING_API UFeatsHandler : public UObject
 
 public:
 	//FUNCTIONS
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	const TSet<TEnumAsByte<EFeatNames>>& GetFeats();
 	
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void AddFeat(EFeatNames feat);
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void RemoveFeat(EFeatNames feat);
 
 
@@ -35,6 +35,6 @@ public:
 	//EVENTS	
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FChanges);
 
-	UPROPERTY()
+	UPROPERTY(BlueprintCallable)
 	FChanges FeatsChanged;	
 };

@@ -14,10 +14,10 @@ class UNREAL_TRAINING_API UFeat : public UObject
 	
 public:	
 	
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	virtual void ApplyFeat(UCharacterData* character){};
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	virtual void DiscardFeat(UCharacterData* character){};
 };
 
