@@ -10,19 +10,113 @@
   <component name="ChangeListManager">
     <list default="true" id="68a34ff8-1a90-49dd-8d4e-fa47aff0d1e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unreal_Training/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unreal_Training/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_AbilitiesAttackBonusProvider.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_ArmorHandler.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_AttackHandler.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_BaseAttackBonusProvider.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_Character.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_Effect.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_EffectsHandler.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_Feat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_FeatsHandler.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_Health.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_PlayerParty.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_PlayerParty.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_ProfessionProgressHandler.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/BP_SavingThrowHandler.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/RPG_System/Interfaces/IHealthProvider.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_AbilitiesPanel.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_AbilitiesPanel.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_CharacterCreation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_CharacterCreation.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_ClassSelection.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_ClassSelection.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_ClassSelectionButton.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_ProfessionSelection.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_ProfessionSelection.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_ProfessionSelectionButton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_ProfessionSelectionButton.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_RaceSelection.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_RaceSelection.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/CharacterCreationTestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/CharacterCreationTestLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Private/Abilities.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Private/Abilities.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Private/BaseDataProvidersLibrary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Private/BaseDataProvidersLibrary.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/Abilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/Abilities.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_RaceSelectionButton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/CharacterCreation/UI_RaceSelectionButton.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/UI_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/UI_Character.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/UI_CharactersPanel.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/UI_CharactersPanel.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/UI_HealthBar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/UI_HealthBar.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/UI_Portrait.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/Blueprints/UI/UI_Portrait.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Unreal_Training_Project/NewMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Unreal_Training_Project/NewMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/0/JM/7NS6KWCC7H7NZCI51XOQ9C.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/1/BP/IGULZAOBC9Q87S9DRGHW16.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/1/MD/F2JBXHLG6LEQE359TAKGWZ.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/1/RO/73KWXSSWWER1VHEJISZAEP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/2/0P/6P7J32CKNRYGBFR84D789O.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/2/8O/JMH0SN4HAODDD4XL3EBLZJ.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/2/A3/KWGGQNZRPRW08GT4R6SELO.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/2/FO/4P7Z4M7OBHPPQS7Y1OWOHC.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/2/NT/U9F3HNOK0BE8V32YZW26ZP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/2/NX/BXHBO5ZJ7P0YA375OGX6XO.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/2/Q3/VF9LPN8Q55SE3JTJ8WW59O.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/2/TQ/S19QJ2UNDEAE15F7I0RD5A.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/3/04/ADYP1U7RTI9M0USI4D3XZ0.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/3/1O/IJURS9NJHDSD5VD3GQW377.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/3/2R/B3P0SU0JM3C6E8W5F43R8J.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/3/5N/NW60JW9LKR3T02KYYNKZ0V.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/3/PP/3XQ220C7YA9KX5KG5P68V9.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/3/V9/NUPKCSEOSMXV7CPVMFPDBQ.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/4/CD/SSOH0J2KYRACSMSDQWBXRE.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/4/CL/J9FV7EASJ51ICMZVDTP4XE.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/4/H2/D579XR7WGDSMHVWM1QGFCM.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/4/NV/GV3DB92XC3HAY9WWMULXT9.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/4/TA/GH5SMY289CPF4SG3LA7SFP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/4/ZO/JJ0YH4GQRTG7EKDM0FERNB.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/5/BF/QR5YIK3NV8GCRK0DFT44TJ.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/5/HB/273L4D3O5S57M6Y3YU1345.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/5/LG/7H1CKMJS2Z798AQSYGYWUM.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/5/T4/GTNXDEX9JBEA4CMKQKPG13.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/5/ZD/RZWATSK1M2J957T8876926.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/6/6M/6YTHNSC01UCUCSMM74H8YG.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/6/6U/SE196UUC1B6VV28F0Q35HN.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/6/EK/F6ZYN0XZNK7QZDX9LBEDC8.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/6/V4/2C4UHH4ESYN5QMZ8PG1WWL.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/7/24/TEICIURNVER4YLFL69ES6J.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/7/7O/9RUFDWXB7PCIK6UGZ4P1Q5.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/7/J6/AVLFM2MHGPPG5GUU8SDITB.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/7/V7/P9YUIXJEN0R8MKSX1FJKD7.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/8/3X/NSLA8J5ISD9U2FUUBZ7OFC.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/8/3Y/WG8RT2MJEJFMI0LX0QF241.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/8/73/T7CZBDIHHYKRJ40401BQKX.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/8/ER/706CG1JJRZ0W6T0YMCWB16.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/8/KJ/J4HK46OQH0BBGJBZCJBA3Z.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/8/MX/7RUT6E0R27H0KRMWJ3LSQG.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/9/0V/GWVGJ6NS897CM3THWWQFPI.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/9/0V/OI360F4TRSQTE8YODRQDA0.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/9/1Z/JXTCLQZ60EDNZAQ2O0IJHM.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/9/6W/KAMG45KN8O07AEHHHN8D00.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/9/75/WOCJQU25EXN36SDZ77TPVJ.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/9/7R/44Y8H582YI5S1YWOIH0YMS.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/9/O3/0NG3QTYA0A07IDAX104A8M.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/A/IY/3OIB5VEEZ0M8IHX51T2TA7.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/A/Y0/AX2499I59KW1MJPTTD0M97.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/B/11/TKJLHZS5VF4PKDOI2WY5R9.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/B/8D/Q5DCGV1B55I7RK5HFN60OX.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/B/AO/7UDZ6ZAH9RL7821NNOSQXE.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/B/AO/L9L3O526PDT2YDAFNYM8EI.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/C/41/LMT8U7V3Y1N785QQFF362X.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/C/AZ/110PLZRUBDVXSXV9ISBABJ.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/C/D0/CAJZ1JBES55T1PNLSS0Y6E.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/C/FU/DEPWUS6ZZL346A94U5MIQ4.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/C/HL/LPRM89SS63NNAYEABEANB6.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/C/JJ/PY2W8J0IRA5ASSPIN7TBFD.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/C/JK/A64WWEOEI9KV3557O9CV10.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/C/NY/YPZI5K872O8Y5XAU8D2RM5.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/C/XV/ON709ICO612V6PPTC50CET.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/D/12/T9VGOS0M1B93IXUNQU3WK4.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/D/GR/DTSY5T4I04YTC4WERNSCO7.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/D/KC/F2LR0P1OKYMUJRRZE1I2RC.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/D/N9/Y90YB47SUKKQGOHQGICO6T.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/D/QY/S4NA96LJNABRI321Z3NXRW.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/D/XE/6U0WFX6B8LQL2OGISLOYAI.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/E/65/HJF6A623BE7QR1DFZVZXB3.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/E/JP/67CONV8N7WC3I9DRON5IN5.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/E/L9/GW9M97WEGLZ5I4MEKI63D2.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Unreal_Training_Project/NewMap/E/MA/09I8LQ63513IL3OOG5BYG9.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalObjects__/Unreal_Training_Project/NewMap/2/KU/NN2ZJCMAMH3U0BK86X4CYZ.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalObjects__/Unreal_Training_Project/NewMap/4/3G/3Q6F41MCZ48DF6MOXOV685.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalObjects__/Unreal_Training_Project/NewMap/6/TN/DRT07QFL2NQQ75MV0ZE182.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalObjects__/Unreal_Training_Project/NewMap/9/IY/9V5159AYZ1821D72E2E1JA.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalObjects__/Unreal_Training_Project/NewMap/E/F9/LI2ZTS2O62QFDQ8R6PT0RI.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/CharacterData.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/CharacterData.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/ExperienceHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/ExperienceHandler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/Feat.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/Feat.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/FeatsHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/FeatsHandler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Unreal_Training/Public/HealthProvider.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Unreal_Training/Public/HealthProvider.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +325,7 @@
       <workItem from="1681394342888" duration="14032000" />
       <workItem from="1681458234037" duration="4368000" />
       <workItem from="1681631175326" duration="1036000" />
+      <workItem from="1681675624935" duration="1491000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1680627558967</created>

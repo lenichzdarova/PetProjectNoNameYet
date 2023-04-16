@@ -21,7 +21,7 @@ class UNREAL_TRAINING_API UCharacterData : public UObject, public IHealthProvide
 
 	//FIELDS
 public:
-	UPROPERTY()
+	UPROPERTY(BlueprintReadWrite)
 	UTexture2D* portrait;
 	
 	UPROPERTY()
