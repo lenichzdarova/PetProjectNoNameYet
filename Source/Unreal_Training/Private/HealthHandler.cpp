@@ -8,6 +8,8 @@ void UHealthHandler::Set(int baseHealthValue, int constitutionBonusValue, int cu
 	baseHealth = baseHealthValue;
 	constitutionBonus = constitutionBonusValue;
 	currentLevel = currentLevelValue;
+	CalculateMaxHealth();
+	currentHealth = maxHealth;
 }
 
 void UHealthHandler::AddCurrentHealth(int value)
