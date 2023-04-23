@@ -13,6 +13,7 @@ void UCharacterData::Set(TEnumAsByte<ERaceNames> raceValue, UTexture2D* portrait
 	experienceHandler = experienceHandlerValue;
 	abilities = abilitiesValue;
 	healthHandler = healthHandlerValue;
+	turnHandler = NewObject<UTurnHandler>(this);
 	SubscribeMembersEvents();	
 }
 
@@ -88,6 +89,18 @@ UFeatsHandler* UCharacterData::GetFeats()
 {
 	return featsHandler;
 }
+
+void UCharacterData::PerformAction()
+{
+	turnHandler->MakeTurn();
+}
+
+UTurnHandler* UCharacterData::GetTurnHandler()
+{
+	return turnHandler;
+}
+
+
 
 
 

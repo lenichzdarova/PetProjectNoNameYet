@@ -11,6 +11,7 @@
 #include "EffectsHandler.h"
 #include "HealthProvider.h"
 #include "ERaceEnum.h"
+#include "TurnHandler.h"
 #include "UObject/NoExportTypes.h"
 #include "CharacterData.generated.h"
 
@@ -38,6 +39,8 @@ private:
 	UEffectsHandler* effectsHandler;
 	UPROPERTY()
 	UExperienceHandler* experienceHandler;
+	UPROPERTY()
+	UTurnHandler* turnHandler;
 	
 
 	//FUNCTIONS
@@ -45,6 +48,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Set(TEnumAsByte<ERaceNames> raceValue, UTexture2D* portraitImage, UFeatsHandler* featsHandlerValue, UEffectsHandler* effectsHandlerValue,
 		UAbilities* abilitiesValue, UExperienceHandler* experienceHandlerValue, UHealthHandler* healthHandlerValue);
+
+	UFUNCTION(BlueprintCallable)
+	void PerformAction();
 		
 	//INTERFACES
 
@@ -56,6 +62,9 @@ public:
 	
 	UFUNCTION(BlueprintCallable)
 	UFeatsHandler* GetFeats();
+
+	UFUNCTION(BlueprintCallable)
+	UTurnHandler* GetTurnHandler();
 	
 private:
 	
