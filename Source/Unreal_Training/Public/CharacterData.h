@@ -15,7 +15,7 @@
 #include "UObject/NoExportTypes.h"
 #include "CharacterData.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(BlueprintType, Blueprintable)
 class UNREAL_TRAINING_API UCharacterData : public UObject, public IHealthProvider
 {
 	GENERATED_BODY()
@@ -25,21 +25,21 @@ public:
 	UPROPERTY(BlueprintReadWrite)
 	UTexture2D* portrait;
 	
-	UPROPERTY()
+	UPROPERTY(BlueprintReadWrite)
 	TEnumAsByte<ERaceNames> race;	
 	
-private:
-	UPROPERTY()
+protected:
+	UPROPERTY(BlueprintReadWrite)
 	UHealthHandler* healthHandler;
-	UPROPERTY()
+	UPROPERTY(BlueprintReadWrite)
 	UAbilities* abilities;
-	UPROPERTY()
+	UPROPERTY(BlueprintReadWrite)
 	UFeatsHandler* featsHandler;
-	UPROPERTY()
+	UPROPERTY(BlueprintReadWrite)
 	UEffectsHandler* effectsHandler;
-	UPROPERTY()
+	UPROPERTY(BlueprintReadWrite)
 	UExperienceHandler* experienceHandler;
-	UPROPERTY()
+	UPROPERTY(BlueprintReadWrite)
 	UTurnHandler* turnHandler;
 	
 
