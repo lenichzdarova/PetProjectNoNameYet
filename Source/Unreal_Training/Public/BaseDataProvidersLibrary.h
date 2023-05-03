@@ -14,7 +14,7 @@
 /**
  * 
  */
-UCLASS(BlueprintType)
+UCLASS(BlueprintType, Blueprintable)
 class UNREAL_TRAINING_API UBaseDataProvidersLibrary : public UObject
 {
 	GENERATED_BODY()
